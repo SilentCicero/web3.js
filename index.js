@@ -1,12 +1,3 @@
-/*var Web3 = require('./lib/web3');
-
-// dont override global variable
-if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
-    window.Web3 = Web3;
-}
-
-module.exports = Web3;*/
-
 /*
     This file is part of web3.js.
 
@@ -36,21 +27,21 @@ module.exports = Web3;*/
 
 var RequestManager = require('./lib/web3/requestmanager');
 /*var Iban = require('./web3/iban');
-var Eth = require('./web3/methods/eth');
-var DB = require('./web3/methods/db');
-var Shh = require('./web3/methods/shh');
-var Net = require('./web3/methods/net');
-var Personal = require('./web3/methods/personal');
-var version = require('./version.json');
-var utils = require('./utils/utils');
-var sha3 = require('./utils/sha3');
-var Batch = require('./web3/batch');
-var Property = require('./web3/property');*/
+//var Eth = require('./web3/methods/eth');
+//var DB = require('./web3/methods/db');
+//var Shh = require('./web3/methods/shh');
+//var Net = require('./web3/methods/net');
+//var Personal = require('./web3/methods/personal');
+//var utils = require('./utils/utils');
+//var sha3 = require('./utils/sha3');
+//var Batch = require('./web3/batch');
+//var Property = require('./web3/property');*/
 var toDecimal = require('./lib/utils/utils').toDecimal;
 var HttpProvider = require('./lib/web3/httpprovider');
 var IpcProvider = require('./lib/web3/ipcprovider');
 var extend = require('./lib/web3/extend');
 var Settings = require('./lib/web3/settings');
+var version = require('./lib/version.json');
 
 
 /*
@@ -156,5 +147,3 @@ if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
 }
 
 module.exports = Web3;
-
-
