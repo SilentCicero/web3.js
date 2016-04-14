@@ -46,8 +46,7 @@ var utils = require('./utils/utils');
 var sha3 = require('./utils/sha3');
 var Batch = require('./web3/batch');
 var Property = require('./web3/property');*/
-var utils = {};
-var utils.toDecimal = require('./lib/web3/utils/utils/toDecimal');
+var toDecimal = require('./lib/web3/utils/toDecimal');
 var HttpProvider = require('./lib/web3/httpprovider');
 var IpcProvider = require('./lib/web3/ipcprovider');
 var extend = require('./lib/web3/extend');
@@ -132,17 +131,17 @@ var properties = function () {
         new Property({
             name: 'version.network',
             getter: 'net_version',
-            inputFormatter: utils.toDecimal
+            inputFormatter: toDecimal
         }),
         new Property({
             name: 'version.ethereum',
             getter: 'eth_protocolVersion',
-            inputFormatter: utils.toDecimal
+            inputFormatter: toDecimal
         }),
         new Property({
             name: 'version.whisper',
             getter: 'shh_version',
-            inputFormatter: utils.toDecimal
+            inputFormatter: toDecimal
         })
     ];
 };
